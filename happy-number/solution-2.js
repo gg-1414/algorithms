@@ -13,7 +13,20 @@
 //     }
 //     return false;
 // };
+
+// var squareSum = function(n) {
+//   let sum = 0;
+//   let tmp;
 //
+//   while (n) {
+//     tmp = n % 10;
+//     sum += tmp * tmp;
+//     n /= 10;
+//   }
+//   return sum;
+// }
+
+// console.log(squareSum(19));
 // console.log(isHappy(19));
 // console.log(isHappy(1));
 // console.log(isHappy(2));
