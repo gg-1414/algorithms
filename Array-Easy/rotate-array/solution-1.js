@@ -17,9 +17,10 @@
 
 
 var rotate = function(nums, k) {
-    if (k === 0) { return nums }
+    if (k === 0) { return nums } // base case
     else {
-        nums.unshift(nums.pop());
-        return rotate(nums, k-1);
+        nums.unshift(nums.pop()); // nums.pop() returns last element as well as removes it from the nums array (mutates),
+        // nums.unshift() pushes that to the front of the nums array (also mutates original array)
+        return rotate(nums, k-1); // keep running function until k === 0
     }
 };
