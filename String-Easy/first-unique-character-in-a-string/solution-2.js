@@ -17,13 +17,10 @@ var firstUniqChar = function(s) {
             dict[char] = 1;
         }
     }
-    const uniqChars = Object.keys(dict).filter(key => {
-        if (dict[key] === 1) {
-            return key
+    for (let char of s) {
+        if (dict[char] === 1) {
+            return s.indexOf(char)
         }
-    })
-    if (uniqChars.length > 0) {
-        return s.indexOf(uniqChars[0]);
     }
     return -1;
 };
