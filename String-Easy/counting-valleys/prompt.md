@@ -17,7 +17,7 @@ countingValleys has the following parameter(s):
 - n: the number of steps Gary takes
 - s: a string describing his path
 
-### Example 1:
+### Example:
 
 #### Input:
 n = 8, s = 'UDDDUDUU'
